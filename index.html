@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css" />
+    <title>Hannah Wayman</title>
+</head>
+<body>
+
+    <!-- <div class="banner">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </div>
+          </div>
+        </nav>
+      </div> -->
+
+    <header>
+      <nav>
+        <h3 id='logo'>Hannah</h3>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Resume</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <section>
+        <div class="hero">
+          <img src="./assets/valley.jpg" alt="black and white trees in a valley">
+          <div class="fog-container">
+            <div class="fog-img fog-img-first"></div>
+            <div class="fog-img fog-img-second"></div>
+          </div>
+          <div class="testHeadline">
+            <img id="testHeadline" src="./assets/marisonBrienyVintage-removebg-preview.png" alt="" class="src">
+          </div>
+          <div class="headline">
+            <h1">Hannah Wayman</h1>
+            <h3>Web Developer</h3>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <div class="slider"></div>
+
+    <!-- ABOUT ME -->
+    
+    <div class="wrapper">
+      <div class="about-me">
+        <!-- <h2>Meet Me</h2> -->
+        <img class="sectionHeader" src="./assets/aboutMeText.JPG" alt="about me">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <p class="about-me-intro">Hi, my name is Hannah. I'm a frontend developer who has dabbled in the backend.</p>
+            </div>
+            <div class="col-sm">
+              2 of 2
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- SKILLS -->
+
+      <div class="skills" id="skills">
+        <!-- <h2>Skills</h2> -->
+        <img class="sectionHeader" src="./assets/skillsText.JPG" alt="about me">
+        <div class="skill-details">
+          <div class="html">
+            <i class="fab fa-html5 fa-3x" id="html"></i>
+            <h3>HTML5 & CSS3</h3>
+          </div>
+          <div class="java">
+            <i class="fab fa-java fa-3x" id="java"></i>
+            <h3>Java</h3>
+          </div>
+          <div class="javascript">
+            <i class="fab fa-js-square fa-3x" id="javascript"></i>
+            <h3>JavaScript</h3>
+          </div>
+          <div class="sql">
+            <i class="fas fa-database fa-3x" id="sql"></i>
+            <h3>SQL</h3>
+          </div>
+          <div class="github">
+            <i class="fab fa-github fa-3x" id="github"></i>
+            <h3>Git</h3>
+          </div>
+          <div class="adobe">
+            <i class="fab fa-adobe fa-3x" id="adobe"></i>
+            <h3>Illustrator & InDesign</h3>
+          </div>
+          <div class="typography">
+            <i class="fas fa-paragraph fa-3x" id="typography"></i>
+            <h3>Typography</h3>
+          </div>
+          <div class="writing">
+            <i class="fas fa-signature fa-3x" id="writing"></i>
+            <h3>Content Writing</h3>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+    </div>
+
+    <!-- PROJECTS  -->
+    <div class="project-container">
+      <!-- <h2>Projects</h2> -->
+      <img class="sectionHeader" src="./assets/projectsText.JPG" alt="about me">
+
+      <div class="row">
+        <div class="column">
+          <div class="card" style="width: 18rem;">
+            <a href="https://hewayman.github.io/Weather-API-Project/"><img class="card-img-top" src="./assets/weatherProject.JPG" alt="sun and cloud animation"></a>
+            <div class="card-body">
+              <h5 class="card-title">API 1</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">API 2</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card" style="width: 18rem;">
+            <a href="https://hewayman.github.io/staticLayout/"><img class="card-img-top" src="./assets/staticLayout.JPG" alt="laptop"></a>
+            <div class="card-body">
+              <h5 class="card-title">Static Layout</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Java App</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card" style="width: 18rem;">
+            <a href="https://codepen.io/hewayman/full/wvGMMmq"><img class="card-img-top" src="./assets/creatureProject.JPG" alt="pig illustration"></a>
+            <div class="card-body">
+              <h5 class="card-title">Creature - Jimmy Jones</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card" style="width: 18rem;">
+            <a href="https://github.com/hewayman/real-world-project"><img class="card-img-top" src="./assets/javaProject.JPG" alt="java code"></a>
+            <div class="card-body">
+              <h5 class="card-title">Java Real World Project</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+    <div class="resume">
+      <img class="resume-image" src="./assets/naturecrop.jpg" alt="trees">
+      <img class="resume-text" src="./assets/resumeText.JPG" alt="">
+      <button class="resume-btn">Download Resume</button>
+    </div>
+
+    <div class="form-container">
+      <form action="https://formspree.io/xdopokgv" method="POST">
+        <label>
+          Your name: <input type="text" name="name">
+        </label>
+        <label>
+          Your email: <input type="text" name="_replyto">
+        </label>
+        <label>
+          Your message: <textarea name="message"></textarea>
+        </label>
+      
+        <button type="submit">Send</button>
+      </form>
+    </div>  
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js" integrity="sha512-lJDBw/vKlGO8aIZB8/6CY4lV+EMAL3qzViHid6wXjH/uDrqUl+uvfCROHXAEL0T/bgdAQHSuE68vRlcFHUdrUw==" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/5e31acae87.js" crossorigin="anonymous"></script>
+
+    <script src='index.js'></script>
+</body>
+</html>
