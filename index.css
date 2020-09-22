@@ -201,6 +201,7 @@ img #testHeadline {
 
 .skills {
     text-align: center;
+    margin: 0 auto;
 }
 
 .skill-details {
@@ -209,43 +210,46 @@ img #testHeadline {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-column-gap: 20px;
+    grid-column-gap: 40px;
     grid-row-gap: 20px;
     align-items: left;
     /* justify-content: space-around; */
     justify-items: center;
 }
 
-/* .project-container {
+.project-container {
+    /* max-width: fit-content; */
+    max-width: 1235px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.grid-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.grid-item {
+    height: 475px;
+    flex-basis: 100%;
+    /* -ms-flex: auto; */
+    width: 259px;
+    position: relative;
+    /* padding: 10px; */
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
-} */
-
-.project-container {
-    max-width: fit-content;
-    margin: 0 auto;
 }
-
+/* 
 .card {
     padding: 0 0;
-}
+} */
 
 .card-img-top {
     height: 230px;
     width: 285px;
-}
-
-.row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.column {
-    flex-basis: 100%;
-    padding-left:25px;
-    padding-top:25px;
 }
 
 .btn-primary {
@@ -255,7 +259,6 @@ img #testHeadline {
 }
 
 .resume {
-   
     position: relative;
     /* width: 100%; */
     height: 300px;
@@ -275,8 +278,8 @@ img #testHeadline {
     /* display: block; */
     overflow: hidden;
     /* position: relative; */
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
     /* top: -500px; */
 }
 
@@ -312,14 +315,53 @@ img #testHeadline {
     height: 400px;
 }
 
-/* @media screen and (max-width: 800px) {
-    .resume-image {
+@media screen and (max-width: 800px) {
+    /* .resume-image {
         top: -100px;
-    }  
+    }   */
+    .skill-details {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 20px;
+    }
 }
 
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .grid-item {
+        flex-basis: 50%;
+    }
+}
 
-@media screen and (max-width: 400px) {
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    /* .grid-item {
+        flex-basis: 3%;
+    } */
+
+    .resume {
+        height: fit-content;
+    }
+
+    .resume-image {
+        width: 100%;
+        height: auto;
+        /* top: -500px; */
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .grid-item {
+        flex-basis: 33.33%;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }
+
+
+/*@media screen and (max-width: 400px) {
     .resume-image {
         top: 0px;
         height: 100%;

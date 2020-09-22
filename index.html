@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- AOS LIBRARY -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css" />
-    <title>Hannah Wayman</title>
+    <title>Hannah Wayman Portfolio</title>
 </head>
 <body>
 
@@ -66,11 +68,13 @@
         <img class="sectionHeader" src="./assets/aboutMeText.JPG" alt="about me">
         <div class="container">
           <div class="row">
-            <div class="col-sm">
-              <p class="about-me-intro">Hi, my name is Hannah. I'm a frontend developer who has dabbled in the backend.</p>
+            <div class="col-sm-4">
+              <p class="about-me-intro">Hi, I'm Hannah. I'm a frontend developer based out of Indianapolis. I am a problem-solver, an art enthusiast, a leader, a barista, a mother, and a wife. </p>
             </div>
-            <div class="col-sm">
-              2 of 2
+            <div class="col-sm-8">
+              <p>I started out my career tutoring high school students with developmental, mental health, and learning challenges. Over the years, I realized that I could combine my passion for art with my knack for critical thinking. 
+              <br><br>
+              As I approached my 30s (yikes) with two little darlings at home, I jumped headfirst into learning software and web development. Although there were days that I felt overwhelmed with all the information I was taking in, I learned how capable I am at balancing family time, work, and life-long learning. </p>
             </div>
           </div>
         </div>
@@ -84,35 +88,35 @@
         <!-- <h2>Skills</h2> -->
         <img class="sectionHeader" src="./assets/skillsText.JPG" alt="about me">
         <div class="skill-details">
-          <div class="html">
+          <div class="html" data-aos="fade-right" data-aos-duration="1700">
             <i class="fab fa-html5 fa-3x" id="html"></i>
             <h3>HTML5 & CSS3</h3>
           </div>
-          <div class="java">
+          <div class="java" data-aos="fade-right" data-aos-duration="1000">
             <i class="fab fa-java fa-3x" id="java"></i>
             <h3>Java</h3>
           </div>
-          <div class="javascript">
+          <div class="javascript" data-aos="fade-left" data-aos-duration="1000">
             <i class="fab fa-js-square fa-3x" id="javascript"></i>
             <h3>JavaScript</h3>
           </div>
-          <div class="sql">
+          <div class="sql" data-aos="fade-left" data-aos-duration="1700">
             <i class="fas fa-database fa-3x" id="sql"></i>
             <h3>SQL</h3>
           </div>
-          <div class="github">
+          <div class="github" data-aos="fade-right" data-aos-duration="1700">
             <i class="fab fa-github fa-3x" id="github"></i>
             <h3>Git</h3>
           </div>
-          <div class="adobe">
+          <div class="adobe" data-aos="fade-right" data-aos-duration="1000">
             <i class="fab fa-adobe fa-3x" id="adobe"></i>
             <h3>Illustrator & InDesign</h3>
           </div>
-          <div class="typography">
+          <div class="typography" data-aos="fade-left" data-aos-duration="1000">
             <i class="fas fa-paragraph fa-3x" id="typography"></i>
             <h3>Typography</h3>
           </div>
-          <div class="writing">
+          <div class="writing" data-aos="fade-left" data-aos-duration="1700">
             <i class="fas fa-signature fa-3x" id="writing"></i>
             <h3>Content Writing</h3>
           </div>
@@ -128,9 +132,9 @@
       <!-- <h2>Projects</h2> -->
       <img class="sectionHeader" src="./assets/projectsText.JPG" alt="about me">
 
-      <div class="row">
-        <div class="column">
-          <div class="card" style="width: 18rem;">
+      <div class="grid-row">
+        <div class="grid-item">
+          <div class="card" data-aos="zoom-in" data-aos-duration="1000" style="width: 18rem;">
             <a href="https://hewayman.github.io/Weather-API-Project/"><img class="card-img-top" src="./assets/weatherProject.JPG" alt="sun and cloud animation"></a>
             <div class="card-body">
               <h5 class="card-title">API 1</h5>
@@ -140,8 +144,8 @@
           </div>
         </div>
 
-        <div class="column">
-          <div class="card" style="width: 18rem;">
+        <div class="grid-item">
+          <div class="card" data-aos="zoom-in" data-aos-duration="1000" style="width: 18rem;">
             <img class="card-img-top" src="..." alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">API 2</h5>
@@ -151,8 +155,8 @@
           </div>
         </div>
 
-        <div class="column">
-          <div class="card" style="width: 18rem;">
+        <div class="grid-item">
+          <div class="card" data-aos="zoom-in" data-aos-duration="1000" style="width: 18rem;">
             <a href="https://hewayman.github.io/staticLayout/"><img class="card-img-top" src="./assets/staticLayout.JPG" alt="laptop"></a>
             <div class="card-body">
               <h5 class="card-title">Static Layout</h5>
@@ -161,11 +165,9 @@
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="row">
-        <div class="column">
-          <div class="card" style="width: 18rem;">
+    
+        <div class="grid-item">
+          <div class="card" data-aos="zoom-in" data-aos-duration="1000" style="width: 18rem;">
             <img class="card-img-top" src="..." alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Java App</h5>
@@ -175,8 +177,8 @@
           </div>
         </div>
 
-        <div class="column">
-          <div class="card" style="width: 18rem;">
+        <div class="grid-item">
+          <div class="card" data-aos="zoom-in" data-aos-duration="1000" style="width: 18rem;">
             <a href="https://codepen.io/hewayman/full/wvGMMmq"><img class="card-img-top" src="./assets/creatureProject.JPG" alt="pig illustration"></a>
             <div class="card-body">
               <h5 class="card-title">Creature - Jimmy Jones</h5>
@@ -186,8 +188,8 @@
           </div>
         </div>
 
-        <div class="column">
-          <div class="card" style="width: 18rem;">
+        <div class="grid-item">
+          <div class="card" data-aos="zoom-in" data-aos-duration="1000" style="width: 18rem;">
             <a href="https://github.com/hewayman/real-world-project"><img class="card-img-top" src="./assets/javaProject.JPG" alt="java code"></a>
             <div class="card-body">
               <h5 class="card-title">Java Real World Project</h5>
@@ -230,7 +232,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js" integrity="sha512-lJDBw/vKlGO8aIZB8/6CY4lV+EMAL3qzViHid6wXjH/uDrqUl+uvfCROHXAEL0T/bgdAQHSuE68vRlcFHUdrUw==" crossorigin="anonymous"></script>
 
+    <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/5e31acae87.js" crossorigin="anonymous"></script>
+
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({once:"true"});
+    </script>
 
     <script src='index.js'></script>
 </body>
