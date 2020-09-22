@@ -11,28 +11,10 @@
     <title>Hannah Wayman Portfolio</title>
 </head>
 <body>
-
-    <!-- <div class="banner">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-              <a class="nav-link" href="#">Features</a>
-              <a class="nav-link" href="#">Pricing</a>
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </div>
-          </div>
-        </nav>
-      </div> -->
-
     <header>
-      <nav>
-        <h3 id='logo'>Hannah</h3>
-        <ul>
+      <nav data-aos="fade-left" data-aos-duration="2500">
+        <!-- <h3 id='logo'>Hannah</h3> -->
+        <ul class="main-nav">
           <li><a href="#">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#">Projects</a></li>
@@ -43,17 +25,17 @@
       <section>
         <div class="hero">
           <img src="./assets/valley.jpg" alt="black and white trees in a valley">
-          <div class="fog-container">
+          <!-- <div class="fog-container">
             <div class="fog-img fog-img-first"></div>
             <div class="fog-img fog-img-second"></div>
-          </div>
+          </div> -->
           <div class="testHeadline">
             <img id="testHeadline" src="./assets/marisonBrienyVintage-removebg-preview.png" alt="" class="src">
           </div>
-          <div class="headline">
+          <!-- <div class="headline">
             <h1">Hannah Wayman</h1>
             <h3>Web Developer</h3>
-          </div>
+          </div> -->
         </div>
       </section>
     </header>
@@ -134,23 +116,25 @@
 
       <div class="grid-row">
         <div class="grid-item">
-          <div class="card" data-aos="zoom-in" data-aos-duration="1000" style="width: 18rem;">
+          
+          <div class="card fade" id="api-project" data-aos="zoom-in" data-aos-duration="1000" style="width: 18rem;">
             <a href="https://hewayman.github.io/Weather-API-Project/"><img class="card-img-top" src="./assets/weatherProject.JPG" alt="sun and cloud animation"></a>
-            <div class="card-body">
-              <h5 class="card-title">API 1</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="overlay overlay_blur">
+              <div class="overlay_title">Weather API</div>
+              <p class="overlay_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis obcaecati vitae reiciendis eum ea inventore commodi error, asperiores modi nesciunt?</p>
+              <a href="https://hewayman.github.io/Weather-API-Project/" class="btn btn-primary">View Project</a>
             </div>
           </div>
+
         </div>
 
         <div class="grid-item">
           <div class="card" data-aos="zoom-in" data-aos-duration="1000" style="width: 18rem;">
             <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">API 2</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="overlay overlay_blur">
+              <div class="overlay_title">2nd API</div>
+              <p class="overlay_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis obcaecati vitae reiciendis eum ea inventore commodi error, asperiores modi nesciunt?</p>
+              <a href="#" class="btn btn-primary">View Project</a>
             </div>
           </div>
         </div>
@@ -158,10 +142,10 @@
         <div class="grid-item">
           <div class="card" data-aos="zoom-in" data-aos-duration="1000" style="width: 18rem;">
             <a href="https://hewayman.github.io/staticLayout/"><img class="card-img-top" src="./assets/staticLayout.JPG" alt="laptop"></a>
-            <div class="card-body">
-              <h5 class="card-title">Static Layout</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="overlay overlay_blur">
+              <div class="overlay_title">Static Layout</div>
+              <p class="overlay_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis obcaecati vitae reiciendis eum ea inventore commodi error, asperiores modi nesciunt?</p>
+              <a href="https://hewayman.github.io/staticLayout/" class="btn btn-primary">View Project</a>
             </div>
           </div>
         </div>
@@ -169,10 +153,10 @@
         <div class="grid-item">
           <div class="card" data-aos="zoom-in" data-aos-duration="1000" style="width: 18rem;">
             <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Java App</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="overlay overlay_blur">
+              <div class="overlay_title">Java Project</div>
+              <p class="overlay_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis obcaecati vitae reiciendis eum ea inventore commodi error, asperiores modi nesciunt?</p>
+              <a href="#" class="btn btn-primary">View Project</a>
             </div>
           </div>
         </div>
@@ -180,10 +164,10 @@
         <div class="grid-item">
           <div class="card" data-aos="zoom-in" data-aos-duration="1000" style="width: 18rem;">
             <a href="https://codepen.io/hewayman/full/wvGMMmq"><img class="card-img-top" src="./assets/creatureProject.JPG" alt="pig illustration"></a>
-            <div class="card-body">
-              <h5 class="card-title">Creature - Jimmy Jones</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="overlay overlay_blur">
+              <div class="overlay_title">CSS Creature</div>
+              <p class="overlay_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis obcaecati vitae reiciendis eum ea inventore commodi error, asperiores modi nesciunt?</p>
+              <a href="#" class="btn btn-primary">View Project</a>
             </div>
           </div>
         </div>
@@ -191,10 +175,10 @@
         <div class="grid-item">
           <div class="card" data-aos="zoom-in" data-aos-duration="1000" style="width: 18rem;">
             <a href="https://github.com/hewayman/real-world-project"><img class="card-img-top" src="./assets/javaProject.JPG" alt="java code"></a>
-            <div class="card-body">
-              <h5 class="card-title">Java Real World Project</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="overlay overlay_blur">
+              <div class="overlay_title">Java Real World Project</div>
+              <p class="overlay_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis obcaecati vitae reiciendis eum ea inventore commodi error, asperiores modi nesciunt?</p>
+              <a href="#" class="btn btn-primary">View Project</a>
             </div>
           </div>
         </div>
@@ -205,7 +189,7 @@
     <div class="resume">
       <img class="resume-image" src="./assets/naturecrop.jpg" alt="trees">
       <img class="resume-text" src="./assets/resumeText.JPG" alt="">
-      <button class="resume-btn">Download Resume</button>
+      <button class="resume-btn" >Download Resume</button>
     </div>
 
     <div class="form-container">
@@ -238,7 +222,7 @@
     <!-- AOS Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init({once:"true"});
+      AOS.init();
     </script>
 
     <script src='index.js'></script>
