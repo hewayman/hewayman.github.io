@@ -17,4 +17,8 @@ timeline.fromTo(hero, 1.5, {height: '0%'}, {height: '100%', ease: Power2.easeInO
 
 // let onload = fog.style.opacity='0';
 
+$('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus')
+  })
+
 
