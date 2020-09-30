@@ -35,8 +35,9 @@ body {
 }
 
 h1 {
-    font-family: 'Vegan', sans-serif;
-    color: white;
+    /* font-family: 'Vegan', sans-serif; */
+    font-family: 'EB Garamond', serif;
+    color: black;
     font-size: 5em;
     /* z-index: 5; */
     top: -70%;
@@ -71,11 +72,11 @@ p {
     letter-spacing: 0.3em;
     font-weight: 600;
     font-family: sans-serif;
-    color: rgb(225, 208, 26);
+    color: black;
     opacity: 1;
     position: absolute;
-    top: 5.8em;
-    left: 0.1em;
+    top: 4.5em;
+    left: 0.2em;
     z-index: 1;
   }
   
@@ -172,7 +173,7 @@ section {
 }
 
 .heroParallax {
-    background-image: url(./assets/woman.jpg);
+    background-image: url(./assets/tabletop2.jpg);
     width: 100%;
     height: 100vh;
     display: flex;
@@ -183,18 +184,20 @@ section {
 }
 
 .headline {
+    display: flex;
     position: fixed;
+    height: 1px;
     width: 100%;
-    top: 55%;
-    left: 5%;
-    /* transform: translate(-15%); */
+    top: 65%;
+    left: 30%;
+    /* transform: translate(-50%); */
 }
 
 .main {
     background: #fff;
     position: relative;
     z-index: 200;
-    margin-top: 50px;
+    padding-top: 50px;
 }
 
 .wrapper {
@@ -227,7 +230,7 @@ section {
 
 .aboutImg {
     /* float: left; */
-    background-image: url(./assets/italy.jpg);
+    background-image: url(./assets/italy2.jpg);
     height: 80vh;
     width: 100%;
     /* height: 100vh; */
@@ -388,13 +391,14 @@ section {
 
 .project-overlay-title {
     font-family: 'EB Garamond', serif;
-    font-size: 2.5em;
+    font-size: 2.2em;
+    line-height: 1;
     /* font-weight: bold; */
 }
 
 .project-overlay-description {
     font-family: 'Poppins', sans-serif;
-    font-size: 1em;
+    font-size: 0.9em;
     margin-top: 0.25em;
 }
 
@@ -419,7 +423,7 @@ section {
 
 .design-text {
     width: 100%;
-    padding-left: 50px;
+    padding-right: 50px;
     position:relative;
 }
 
@@ -428,23 +432,61 @@ section {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-column-gap: 40px;
-    /* padding-top: 40px; */
     position:absolute; 
     text-align: center;
     bottom:0;
 }
 
+.design-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 100px;
+    grid-row-gap: 30px;
+    padding: 100px 10% 0 10%;
+}
 
-.grid-row {
+.design-item {
+    position: relative;
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    border: 0.1px solid #bbbaba;
+}
+
+.design-item img {
+    background-position: center;
+    max-width:100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.resume-image {
+    /* float: left; */
+    background-image: url(./assets/italy.jpg);
+    height: 80vh;
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* #illustration {
+    max-width: auto;
+    height: 100%;
+} */
+
+/* .grid-row {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
 }
 
 .grid-item {
-    /* height: 475px; */
     flex-basis: 100%;
-    /* -ms-flex: auto; */
     height: fit-content;
     width: fit-content;
     padding: 20px 0;
@@ -456,16 +498,13 @@ section {
 
 .card {
     position: relative;
-    /* border-radius: 15px;
-    border: none; */
 } 
 
 .card-img-top {
     height: 230px;
     width: 285px;
     position: relative;
-    /* border-radius: 15px; */
-}
+} */
 
 .overlay {
     position: absolute;
@@ -569,6 +608,15 @@ section {
     /* top: -500px; */
 }
 
+.resume-text-background {
+    background-color: black;
+    height: 100%;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 600; */
+}
+
 .resume-btn {
     position: absolute;
     top: 50%;
@@ -621,6 +669,11 @@ section {
     height: 400px;
     z-index: 6;
     position: absolute;
+}
+
+.form-container h2 {
+    color: white;
+    text-align: center;
 }
 
 @media screen and (max-width: 800px) {
