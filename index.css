@@ -25,6 +25,13 @@ body {
 
 }
 
+#about, #projects, #resume, #contact {
+    padding-top: 100px;
+    margin-top: -100px;
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
+}
+
 /* TYPOGRAPHY */
 
 @font-face {
@@ -105,34 +112,21 @@ p {
     -ms-transform: translate(-50%, -50%);
 }
 
-
-/* .slider {
-    position: absolute;
-    top: 0;
-    left: 0;
+.navbar {
+    background-color: white;
     width: 100%;
-    height: 100vh;
-    display: flex;
-    background-color: #525252;
-    background-color: #f7f7f7;
-    z-index: -1;
-} */
-
-/* header {
-    position: relative;
-} */
-
-nav {
-
-    height: 20px;
-    /* color: #E2E2E2; */
-    /* color: #525252; */
-    color: rgb(202, 70, 30);
-    z-index: 3;
-    position: absolute;
+    height: 80px;
+    z-index: 60;
+    position: fixed;
     top: 0;
     right: 0;
-    padding-right: 20px;
+    padding: 0 65px 0 0;
+    margin: 0;
+}
+
+.logo {
+    height: 80px;
+    width: 80px;
 }
 
 nav li {
@@ -140,17 +134,18 @@ nav li {
     list-style-type: none;
     font-size: 1rem;
     text-transform: uppercase;
-    padding: 20px 10px;
+    padding: 20px 0 0 20px;
 }
 
 nav li a {
-    color: white;
+    color: black;
     transition: all 0.3s ease 0s;
     opacity: 0.8;
 }
 
 nav li a:hover {
-    color: #0088a9;
+    color: #E76F51;
+    text-decoration: none;
 }
 
 /* #logo{
@@ -170,6 +165,7 @@ section {
     position: relative;
     overflow: hidden;
     display: flex;
+    margin: 0 80px;
 }
 
 .heroParallax {
@@ -181,6 +177,7 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: 60px;
 }
 
 .headline {
@@ -188,7 +185,7 @@ section {
     position: fixed;
     height: 1px;
     width: 100%;
-    top: 65%;
+    top: 60%;
     left: 30%;
     /* transform: translate(-50%); */
 }
@@ -196,7 +193,7 @@ section {
 .main {
     background: #fff;
     position: relative;
-    z-index: 200;
+    /* z-index: 200; */
     padding-top: 50px;
 }
 
@@ -204,7 +201,7 @@ section {
     /* margin: 50px 10%; */
     position: relative;
     margin: 0 0;
-    padding: 50px 10%;
+    padding: 100px 10%;
     /* width: 100vw; */
     display: grid;
     /* color: black; */
@@ -216,7 +213,8 @@ section {
     justify-items: center;
     text-align: center;
     background-color: white;
-    /* float: left; */
+    float: left;
+    padding-bottom: 60px;
 }
 
 .about-me-intro {
@@ -307,7 +305,9 @@ section {
 .project-summary {
     display: flex;
     padding: 0 10%;
+    /* margin-top: 500px; */
     /* justify-content: center; */
+    /* margin-top: 300px; */
 }
 
 .project-text {
@@ -327,19 +327,17 @@ section {
     bottom:0;
 }
 
-
+/* 
 .project-container {
-    /* max-width: fit-content; */
     background-color: #f7f7f7;
     position: relative;
     max-width: 1235px;
     margin: 0 10%;
-    /* padding: 0 auto; */
     padding: 0 10%;
     z-index: 4;
     text-align: center;
     display: flex;
-}
+} */
 
 .projects-container {
     display: grid;
@@ -550,6 +548,41 @@ section {
     margin-top: 0.25em;
 }
 
+form {
+    width: 320px;
+    float: left;
+    margin: 20px;
+}
+
+form div {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.form-container {
+    display: inline-block;
+    background-color: #0c0c14;
+    color: white;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 6;
+    position: absolute;
+    text-align: center;
+}
+
+.form-container h2 {
+    color: white;
+    text-align: center;
+}
+
+.form-details {
+    width: 50%;
+    text-align: left;
+    margin: 0 auto;
+}
+
 .btn-primary {
     /* background-color: rgb(202, 70, 30); */
     background-color: transparent;
@@ -659,22 +692,6 @@ section {
     height: 20vh;
     width: 100%;
 } */
-
-.form-container {
-    display: inline-block;
-    background-color: #0c0c14;
-    color: white;
-    display: block;
-    width: 100%;
-    height: 400px;
-    z-index: 6;
-    position: absolute;
-}
-
-.form-container h2 {
-    color: white;
-    text-align: center;
-}
 
 @media screen and (max-width: 800px) {
     /* .resume-image {
