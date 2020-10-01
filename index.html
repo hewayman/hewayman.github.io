@@ -17,15 +17,28 @@
 <body>
     <header>
       <!-- <nav data-aos="fade-left" data-aos-duration="2500"> -->
-      <nav class="navbar">
+      <nav class="navbar" role="navigation">
         <a href="#"><img class="logo" src="./assets/logo.jfif" alt="logo" /></a>
-        <ul class="main-nav">
+        <div id="menu-toggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul class="main-nav" id="menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- <ul class="main-nav">
           <li><a href="#about">About</a></li>
-          <!-- <li><a href="#skills">Skills</a></li> -->
           <li><a href="#projects">Projects</a></li>
           <li><a href="#resume">Resume</a></li>
           <li><a href="#contact">Contact</a></li>
-        </ul>
+        </ul> -->
       </nav>
       <section>
         <div class="hero">
@@ -278,110 +291,6 @@
         </div>
 
     </div> <!-- WRAPPER ENDING-->
-
-          <!-- <div class="grid-item">
-            <div class="card" data-aos="zoom-in" data-aos-duration="1000" style="width: 18rem;">
-              <a href="https://codepen.io/hewayman/full/wvGMMmq"><img class="card-img-top" src="./assets/creatureProject.JPG" alt="pig illustration"></a>
-              <div class="overlay overlay_blur">
-                <div class="overlay_title">CSS Creature</div>
-                <p class="overlay_description">Inspired by one of my children's favorite shows, Jimmy Jones was created only with HTML and CSS.</p>
-                <a href="https://codepen.io/hewayman/pen/wvGMMmq" target="blank" class="btn btn-primary">View Project</a>
-              </div>
-            </div>
-          </div> -->
-
-          <!-- <div class="grid-item">
-            <div class="card" data-aos="zoom-in" data-aos-duration="1000" style="width: 18rem;">
-              <a href="https://github.com/hewayman/real-world-project"><img class="card-img-top" src="./assets/javaProject.JPG" alt="java code"></a>
-              <div class="overlay overlay_blur">
-                <div class="overlay_title">Java Real World Project</div>
-                <p class="overlay_description">A program that reads a text file with patient information and produces a report. The user can choose whether to output the report to the screen, a file, or both.</p>
-                <a href="https://github.com/hewayman/real-world-project" target="blank" class="btn btn-primary">View Project</a>
-              </div>
-            </div>
-          </div> -->
-
-          <!-- <div class="grid-item">
-            <div class="card" data-aos="zoom-in" data-aos-duration="1000" style="width: 18rem;">
-              <a href="#"><img class="card-img-top" src="./assets/typography.jpg" alt="java code"></a>
-              <div class="overlay overlay_blur">
-                <div class="overlay_title">Visual Definitions</div>
-                <p class="overlay_description">Visual representations of typography, automobile design, and art noveau.</p>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal-definitions">
-                  View Project
-                </button>
-              </div>
-            </div>
-          </div> -->
-<!-- 
-          <div class="grid-item">
-            <div class="card" data-aos="zoom-in" data-aos-duration="1000" style="width: 18rem;">
-              <a href="#"><img class="card-img-top" src="./assets/processOfMovementThumb.jpg" alt="java code"></a>
-              <div class="overlay overlay_blur">
-                <div class="overlay_title">Fashion Through the Decades</div>
-                <p class="overlay_description">Vector illustrations that depict how fashion changed from the 1940s to 1980s.</p>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal-illustrations">
-                  View Project
-                </button>
-              </div>
-            </div>
-          </div> -->
-
-          <!-- <div class="grid-row">
-            <div class="grid-item">
-              
-              <div class="card fade" id="api-project" data-aos="zoom-in" data-aos-duration="1000" style="width: 18rem;">
-                <img class="card-img-top" src="./assets/weatherProject.JPG" alt="sun and cloud animation">
-                <div class="overlay overlay_blur">
-                  <div class="overlay_title">Weather API</div>
-                  <p class="overlay_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis obcaecati vitae reiciendis eum ea inventore commodi error, asperiores modi nesciunt?</p>
-                  <a href="https://hewayman.github.io/Weather-API-Project/" target="blank" class="btn btn-primary">View Project</a>
-                </div>
-              </div>
-  
-            </div> -->
-  
-            <!-- <div class="grid-item">
-              <div class="card" data-aos="zoom-in" data-aos-duration="1000" style="width: 18rem;">
-                <img class="card-img-top" src="./assets/holidaysAPI.JPG" alt="Card image cap">
-                <div class="overlay overlay_blur">
-                  <div class="overlay_title">World Holiday API</div>
-                  <p class="overlay_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis obcaecati vitae reiciendis eum ea inventore commodi error, asperiores modi nesciunt?</p>
-                  <a href="#" class="btn btn-primary">View Project</a>
-                </div>
-              </div>
-            </div> -->
-          <!-- </div>
-  
-          <div class="grid-row"> -->
-            <!-- <div class="grid-item">
-              <div class="card" data-aos="zoom-in" data-aos-duration="1000" style="width: 18rem;">
-                <a href="https://hewayman.github.io/staticLayout/"><img class="card-img-top" src="./assets/staticLayout.JPG" alt="laptop"></a>
-                <div class="overlay overlay_blur">
-                  <div class="overlay_title">Static Layout</div>
-                  <p class="overlay_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis obcaecati vitae reiciendis eum ea inventore commodi error, asperiores modi nesciunt?</p>
-                  <a href="https://hewayman.github.io/staticLayout/" target="blank" class="btn btn-primary">View Project</a>
-                </div>
-              </div>
-            </div> -->
-        
-            <!-- <div class="grid-item">
-              <div class="card" data-aos="zoom-in" data-aos-duration="1000" style="width: 18rem;">
-                <img class="card-img-top" src="./assets/Home.JPG" alt="Card image cap">
-                <div class="overlay overlay_blur">
-                  <div class="overlay_title">Java Project</div>
-                  <p class="overlay_description">A coffee house ordering screen that utilizes abstraction and inheritance. The GUI was created with JavaFX. </p> -->
-                  <!-- <a href="https://github.com/hewayman/silver-bay-coffee-house" class="btn btn-primary">View Project</a> -->
-                  <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                    View Project
-                  </button>
-                </div>
-              </div>
-            </div>
-  
-          </div> -->
-
-
       
       <div class="footer">
         <div class="resume" id="resume">
@@ -395,29 +304,8 @@
         <div class="form-container" id="contact">
           <!-- <h2>Want to learn more?</h2>
           <button class="" >Download Resume</button> -->
-          <h2>Want to contact me?</h2>
-          <div class="form-details go-bottom">
-            <form action="https://formspree.io/xdopokgv" method="POST">
-              <div>
-                <label>
-                  Your name: <input type="text" name="name">
-                </label>
-              </div>
-              <div>
-                <label>
-                  Your email: <input type="text" name="_replyto">
-                </label>
-              </div>
-              <div>
-                <label>
-                  Your message: <textarea name="message"></textarea>
-                </label>
-              </div>
-            
-              <button type="submit">Send</button>
-            </form>
-          </div>
-          <!-- <div class="form-details">
+          <div class="form-details">
+            <h2>Want to contact me?</h2>
             <form action="https://formspree.io/xdopokgv" method="POST">
               <label>
                 Your name: <input type="text" name="name">
@@ -431,7 +319,6 @@
             
               <button type="submit">Send</button>
             </form>
-          </div> -->
         </div> 
       </div> <!-- MAIN ENDING-->
 
