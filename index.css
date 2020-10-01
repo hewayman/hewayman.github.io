@@ -995,6 +995,7 @@ form div {
 
     .heroParallax {
         background-image: url(./assets/tabletopMobile2.jpg);
+        background-attachment: scroll;
         /* height: 80vh; */
     }
 
@@ -1004,7 +1005,7 @@ form div {
     }
 
     .headline {
-        top: 55%;
+        top: 65%;
         left: 6%;
         /* transform: translate(-50%); */
     }
