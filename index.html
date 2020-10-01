@@ -55,15 +55,17 @@
     <div class="main">
       <div class="wrapper">
         <div class="about-me" id="about">
-          <h2>About Me</h2>
-          <div class="container">
+          <!-- <h2>Hi, I'm Hannah.</h2> -->
+          <div class="container about-me-intro">
             <!-- <div class="row">
               <div class="col-sm-4"> -->
-                <p class="about-me-intro">I'm Hannah, frontend developer, forever curious, and always searching for answers. 
+                <h2>Hi, I'm Hannah.</h2>
+                <p >
+                  
                   <!-- <br>I am a problem-solver, an art enthusiast, a leader, a barista, a mother, and a wife. -->
-                <br><br>
+                <!-- <br><br> -->
                 I began my career working closely with high school students with developmental and learning challenges. Over the years, I realized that I could combine my passion for art with my knack for critical thinking. 
-                As I approached my 30s with two little darlings at home, I jumped headfirst into learning software and web development. Since then, I have gained hands-on experience building projects with HTML, CSS, JavaScript, Java, and more.</p>
+                As I approached my 30s with two little darlings at home, I jumped headfirst into learning software and web development. Since then, I have tackled projects with HTML, CSS, JavaScript, Java, and more.</p>
                 <!-- <br><br>
                 As I approached my 30s (yikes) with two little darlings at home, I jumped headfirst into learning software and web development. Although there were days that I felt overwhelmed with all the information I was taking in, I learned how capable I am at balancing family time, work, and life-long learning. </p> -->
               <!--</div>
@@ -305,8 +307,14 @@
           <!-- <h2>Want to learn more?</h2>
           <button class="" >Download Resume</button> -->
           <div class="form-details">
-            <h2>Want to contact me?</h2>
-            <form action="https://formspree.io/xdopokgv" method="POST">
+            <h2>Contact Me</h2>
+            <form action="https://formspree.io/xdopokgv" method="POST">      
+              <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+              <input name="email" type="text" class="feedback-input" placeholder="Email" />
+              <textarea name="text" class="feedback-input" placeholder="Message"></textarea>
+              <input type="submit" value="SUBMIT"/>
+            </form>
+            <!-- <form action="https://formspree.io/xdopokgv" method="POST">
               <label>
                 Your name: <input type="text" name="name">
               </label>
@@ -318,7 +326,7 @@
               </label>
             
               <button type="submit">Send</button>
-            </form>
+            </form> -->
         </div> 
       </div> <!-- MAIN ENDING-->
 

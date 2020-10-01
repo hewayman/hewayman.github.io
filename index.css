@@ -102,11 +102,11 @@ p {
 }
 
 .resume-text {
-    color: white;
-    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-family: 'EB Garamond', serif;
     width: auto;
     position: absolute;
-    top: 37%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -146,7 +146,7 @@ p {
 }
     
 #menu-toggle a:hover {
-    color: #E76F51;
+    color: #CC4949;
 }
 
 #menu-toggle input {
@@ -223,12 +223,13 @@ p {
 #menu
 {
   position: absolute;
-  width: 600px;
+  width: 700px;
+  height: 110px;
   margin: -100px 0 0 0;
-  padding: 50px;
+  padding: 50px 40px 20px 50px;
   /* padding-top: 125px; */
   right: -100px;
-  
+  background-color: transparent;
   /* background: #ededed; */
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -241,7 +242,7 @@ p {
 }
 
 #menu li {
-  padding: 10px 0;
+  padding: 20px 20px 10px 20px;
   font-size: 1em;
 }
 
@@ -345,6 +346,7 @@ section {
 .about-me-intro {
     width: 50%;
     margin: 0 auto;
+    text-align: left;
 }
 
 .container {
@@ -353,7 +355,7 @@ section {
 
 .aboutImg {
     /* float: left; */
-    background-image: url(./assets/italy2.jpg);
+    background-image: url(./assets/resumeImgBlur.jpg);
     height: 80vh;
     width: 100%;
     /* height: 100vh; */
@@ -520,13 +522,13 @@ section {
 
 .project-overlay-description {
     font-family: 'Poppins', sans-serif;
-    font-size: 0.9em;
+    font-size: 0.8em;
     margin-top: 0.25em;
 }
 
 .design-img {
     float: left;
-    background-image: url(./assets/designImg.jpg);
+    background-image: url(./assets/designImgThumb.jpg);
     height: 60vh;
     width: 100%;
     /* height: 100vh; */
@@ -646,9 +648,9 @@ section {
     border: none; */
 }
 
-.overlay_blur {
+/* .overlay_blur {
     backdrop-filter: blur(5px);
-}
+} */
 
 .overlay > * {
     transform: translateY(20px);
@@ -673,7 +675,65 @@ section {
     margin-top: 0.25em;
 }
 
-form {
+.form-container h2 {
+    max-width:420px; 
+    margin:50px auto 0 auto; 
+    color: black;
+    /* text-align: center; */
+}
+
+form { 
+    max-width:420px; 
+    margin:20px auto 50px auto; 
+}
+
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  /* border-radius: 5px; */
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid black;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  /* font-family: 'Montserrat', Arial, Helvetica, sans-serif; */
+  width: 100%;
+  background: black;
+  /* border-radius:5px; */
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { 
+    background:white; 
+    color: #CC4949;
+    border: 2px solid #CC4949;
+}
+
+/* form {
     width: 320px;
     float: left;
     margin: 20px;
@@ -682,10 +742,10 @@ form {
 form div {
     position: relative;
     overflow: hidden;
-}
+} */
 
 
-.form-container {
+/* .form-container {
     display: inline-block;
     background-color: white;
     color: black;
@@ -697,44 +757,58 @@ form div {
     text-align: center;
 }
 
-.form-container h2 {
-    color: black;
-    text-align: center;
-}
-
 .form-details {
     width: 50%;
     text-align: left;
     margin: 0 auto;
-}
+} */
 
 .btn-primary {
     /* background-color: rgb(202, 70, 30); */
-    background-color: transparent;
+    /* background-color: transparent;
     color: white;
     border-radius: 20px;
-    border: 2px solid #E76F51;
+    border: 2px solid #E76F51; */
+    padding: 12px 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: bold;
+    border-radius: 0px;
 }
 
 .btn-primary:hover {
-    background-color: #E76F51;
-    border: 2px solid #E76F51;
+    /* background-color: #E76F51; */
+    color: #CC4949;
+    background-color: white;
+    border: 3px solid #CC4949;
 }
 
 .btn-primary:focus {
-    background-color: #E76F51;
-    border: 2px solid #E76F51;
+    background-color: #CC4949;
+    border: 2px solid #CC4949;
     outline: none;
 }
 
 .btn-primary:active {
-    background-color: #E76F51;
-    border: 2px solid #E76F51;
+    background-color: #CC4949;
+    border: 2px solid #CC4949;
     outline: none;
 }
 
 .modal{
-    width: 75%; /* respsonsive width */ 
+    height: 100vh; /* respsonsive width */    
+}
+
+.modal-header {
+    padding: 10px 20px;
+}
+
+.modal-body {
+    /* width: 75%; */
+    margin: 0 auto;
 }
 
 .footer {
@@ -777,35 +851,39 @@ form div {
 
 .resume-btn {
     position: absolute;
-    top: 50%;
+    top: 62%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     /* background-color: white; */
-    padding: 10px 10px;
-    /*border: transparent;
-    border-radius: 6px;
-    opacity: 0.9; */
-    background-color: transparent;
+    padding: 15px 20px;
+    background-color: black;
     color: white;
-    border-radius: 30px;
-    border: 2px solid #E76F51;
-    backdrop-filter: blur(2px);
+    border: none;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: bold;
+    /* backdrop-filter: blur(2px); */
+    /* border-radius: 30px; */
+    /* border: 2px solid #E76F51; */
 }
 
 .resume-btn:hover {
-    background-color: #E76F51;
-    border: 2px solid #E76F51;
+    /* background-color: #E76F51; */
+    border: 2px solid #CC4949; 
+    background-color: white;
+    color: #CC4949;
+
 }
 
 .resume-btn:focus {
-    background-color: #E76F51;
+    background-color: black;
     border: 2px solid #E76F51;
     outline: none;
 }
 
 .resume-btn:active {
-    background-color: #E76F51;
+    background-color: black;
     border: 2px solid #E76F51;
     outline: none;
 }
@@ -857,11 +935,17 @@ form div {
 }
 
 #btn-modal {
-    color: #E76F51;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    /* padding: 10px 15px; */
 }
 
 #btn-modal:hover {
+    background-color: black;
+    /* border: 2px solid #E76F51; */
     color: white;
+    
 }
 
 
@@ -876,10 +960,11 @@ form div {
   /* ipad */
   @media screen and (max-width: 1024px) {
     #menu {
-        width: 300px;
-        /* margin: -100px 0 0 0; */
-        padding: 50px;
-        padding-top: 125px;
+        width: 250px;
+        height: 400px;
+        background-color: white;
+        padding: 125px 250px 50px 50px;
+        /* padding-top: 125px; */
         right: -100px;
     }
     nav li {
@@ -901,10 +986,11 @@ form div {
 
     .headerSubtext {
         font-size: 1em;
+        font-weight: 400;
     }
 
     .project-img {
-        background-image: url(./assets/sketchThumb2.jpg);
+        background-image: url(./assets/sketchThumbMobile.jpg);
         height: 30vh;
     }
 
@@ -979,6 +1065,10 @@ form div {
         font-size: 2em;
     }
 
+    .navbar {
+        padding-right: 40px;
+    }
+
     .headerSubtext {
         font-size: 0.8em;
         font-weight: normal;
@@ -1008,6 +1098,12 @@ form div {
         top: 65%;
         left: 6%;
         /* transform: translate(-50%); */
+    }
+
+    .about-me-intro {
+        width: 100%;
+        margin: 0 auto;
+        text-align: left;
     }
 
     .project-summary {
