@@ -1106,6 +1106,11 @@ form div {
         text-align: left;
     }
 
+    .project-img {
+        background-image: url(./assets/sketchThumbMobile.jpg);
+        height: 30vh;
+    }
+
     .project-summary {
         display: inline-block;
         height: fit-content;
@@ -1154,10 +1159,7 @@ form div {
 
     .aboutImg {
         height: 50vh;
-    }
-
-    .aboutImg {
-        height: 100vh;
+        background-image: none;
     }
 
     .form-container {
