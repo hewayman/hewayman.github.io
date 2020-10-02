@@ -677,14 +677,14 @@ section {
 
 .form-container h2 {
     max-width:420px; 
-    margin:50px auto 0 auto; 
+    margin:70px auto 0 auto; 
     color: black;
     /* text-align: center; */
 }
 
 form { 
     max-width:420px; 
-    margin:20px auto 50px auto; 
+    margin:20px auto 80px auto; 
 }
 
 .feedback-input {
@@ -704,7 +704,9 @@ form {
   outline:0;
 }
 
-.feedback-input:focus { border:2px solid #CC4949; }
+.feedback-input:focus { 
+    border:2px solid #CC4949; 
+}
 
 textarea {
   height: 150px;
@@ -715,11 +717,12 @@ textarea {
 [type="submit"] {
   /* font-family: 'Montserrat', Arial, Helvetica, sans-serif; */
   width: 100%;
-  background: black;
+  background: white;
   /* border-radius:5px; */
-  border:0;
+  /* border:0; */
+  border: 2px solid #CC4949;
   cursor:pointer;
-  color:white;
+  color: #CC4949;
   font-size:24px;
   padding-top:10px;
   padding-bottom:10px;
@@ -728,9 +731,10 @@ textarea {
   font-weight:700;
 }
 [type="submit"]:hover { 
-    background:white; 
-    color: #CC4949;
-    border: 2px solid #CC4949;
+    background:black; 
+    color: white;
+    /* border: 2px solid #CC4949; */
+    border: none;
 }
 
 /* form {
@@ -811,10 +815,6 @@ form div {
     margin: 0 auto;
 }
 
-.footer {
-    position: relative;
-}
-
 .resume {
     position: relative;
     width: 100%;
@@ -888,41 +888,43 @@ form div {
     outline: none;
 }
 
+.footer-container {
+    position: relative;
+    background-color: white;
+    z-index: 10;
+}
 
-
-/* Small devices (landscape phones, 576px and up) */
-/* @media (min-width: 576px) {
-    .grid-item {
-        flex-basis: 50%;
-    }
-
-    .modal{
-        width: 100%; /* respsonsive width */ 
-    /* }
-}  */
-
-/* Medium devices (tablets, 768px and up) */
-/* @media (min-width: 768px) {  */
-    /* .grid-item {
-        flex-basis: 3%;
-    } */
-
-    /* .resume {
-        height: fit-content;
-    }
-
-    .resume-image {
-        width: 100%;
-        height: auto;
-        /* top: -500px; */
-    /* }
+/* .contact {
+    background-color: pink;
+    position: relative;
 } */
 
-/* Large devices (desktops, 992px and up) */
-/* @media (min-width: 992px) {
-    .grid-item {
-        flex-basis: 25%;
-    }
+footer {
+    background-color: black;
+    text-align: center;
+}
+
+.links {
+    /* background-color: black; */
+    height: 40px;
+    width: 100%;
+    display: inline-block;
+    padding-top: 15px;
+}
+
+.links ul {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.links li {
+    color: white;
+    display: inline;
+    padding: 10px;
+}
+/* 
+.links i {
+    color: white;
 } */
 
 
@@ -1010,7 +1012,7 @@ form div {
         height: 50vh;
     }
 
-    .form-container {
+    /* .form-container {
         height: 40vh;
     }
 
@@ -1022,7 +1024,7 @@ form div {
         width: 100%;
         margin: 0 0 0 0;
         padding: 0 0 0 45px;
-    }
+    } */
 
   }
 
@@ -1062,7 +1064,7 @@ form div {
     }
 
     h2 {
-        font-size: 2em;
+        font-size: 1.6em;
     }
 
     .navbar {
@@ -1107,8 +1109,8 @@ form div {
     }
 
     .project-img {
-        background-image: url(./assets/sketchThumbMobile.jpg);
-        height: 30vh;
+        background-image: none;
+        height: 5vh;
     }
 
     .project-summary {
@@ -1162,6 +1164,29 @@ form div {
         background-image: none;
     }
 
+    .resume-text {
+        font-size: 1.6em;
+        max-width: 320px;
+        margin: 0 auto;
+        padding-bottom: 80px;
+    }
+
+    /* .form-container {
+        margin-bottom: 40px;
+    } */
+
+    .form-container h2 {
+        max-width:250px; 
+        margin: 0 auto 0 auto; 
+        color: black;
+        /* text-align: center; */
+    }
+    
+    form { 
+        max-width:250px; 
+        margin:20px auto 50px auto; 
+    }
+/* 
     .form-container {
         height: 70vh;
     }
@@ -1175,8 +1200,8 @@ form div {
     .form-details {
         width: 300px;
         padding-top: 20px;
-        /* clear: both; */
-    }
+    
+    }*/
 
   }
 
