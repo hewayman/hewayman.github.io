@@ -20,8 +20,8 @@ body {
     font-size: 1.2em;
     font-weight: 300;
     overflow-x: hidden;
-    background-color: #f7f7f7;
-    /* background-color: #0c0c14; */
+    /* background-color: #f7f7f7; */
+    background-color: white;
 
 }
 
@@ -335,6 +335,19 @@ section {
     z-index: 4;
 }
 
+.profile-img {
+    background-image: url(./assets/HannahWayman2.jpg);
+    width: 20%;
+    height: 40vh;
+    display: flex;
+    position: relative;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+
 .about-me {
     justify-items: center;
     text-align: center;
@@ -345,8 +358,9 @@ section {
 
 .about-me-intro {
     width: 50%;
-    margin: 0 auto;
+    padding-left: 40px;
     text-align: left;
+    display: inline-block;
 }
 
 .container {
