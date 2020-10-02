@@ -942,6 +942,25 @@ footer {
         top: 3em;
     }
 
+    .about-me-intro {
+        width: 595px;
+        margin: 0 auto;
+        text-align: left;
+        padding: 20px 10% 0 10%;
+    }
+ 
+    .container {
+        margin-left: 0;
+        margin-right: 0;
+        /* width: 70%; */
+        display: inline;
+    }
+
+    .profile-img img {
+        margin-right: 0;
+        width: 300px;
+    }
+
     .project-overlay-title {
         font-family: 'EB Garamond', serif;
         width: 100%;
@@ -1085,15 +1104,17 @@ footer {
     }
 
     .about-me-intro {
-        width: 100vw;
+        width: 85vw;
         margin: 0 auto;
         text-align: left;
+        padding: 20px 10% 0 10%;
     }
  
     .container {
         margin-left: 0;
         margin-right: 0;
-        width: 70%;
+        /* width: 70%; */
+        display: inline;
     }
 
     .profile-img img {
