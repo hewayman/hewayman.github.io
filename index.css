@@ -599,38 +599,6 @@ section {
     background-size: cover;
 }
 
-/* #illustration {
-    max-width: auto;
-    height: 100%;
-} */
-
-/* .grid-row {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-}
-
-.grid-item {
-    flex-basis: 100%;
-    height: fit-content;
-    width: fit-content;
-    padding: 20px 0;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.card {
-    position: relative;
-} 
-
-.card-img-top {
-    height: 230px;
-    width: 285px;
-    position: relative;
-} */
-
 .overlay {
     position: absolute;
     width: 100%;
@@ -644,13 +612,7 @@ section {
     padding: 0 10px;
     opacity: 0;
     transition: opacity 0.5s ease;
-    /* border-radius: 15px;
-    border: none; */
 }
-
-/* .overlay_blur {
-    backdrop-filter: blur(5px);
-} */
 
 .overlay > * {
     transform: translateY(20px);
@@ -679,7 +641,6 @@ section {
     max-width:420px; 
     margin:70px auto 0 auto; 
     color: black;
-    /* text-align: center; */
 }
 
 form { 
@@ -688,11 +649,10 @@ form {
 }
 
 .feedback-input {
-  color:white;
+  color:black;
   font-family: Helvetica, Arial, sans-serif;
   font-weight:500;
   font-size: 18px;
-  /* border-radius: 5px; */
   line-height: 22px;
   background-color: transparent;
   border:2px solid black;
@@ -737,42 +697,7 @@ textarea {
     border: none;
 }
 
-/* form {
-    width: 320px;
-    float: left;
-    margin: 20px;
-}
-
-form div {
-    position: relative;
-    overflow: hidden;
-} */
-
-
-/* .form-container {
-    display: inline-block;
-    background-color: white;
-    color: black;
-    display: block;
-    width: 100%;
-    height: 100%;
-    z-index: 6;
-    position: absolute;
-    text-align: center;
-}
-
-.form-details {
-    width: 50%;
-    text-align: left;
-    margin: 0 auto;
-} */
-
 .btn-primary {
-    /* background-color: rgb(202, 70, 30); */
-    /* background-color: transparent;
-    color: white;
-    border-radius: 20px;
-    border: 2px solid #E76F51; */
     padding: 12px 20px;
     background-color: white;
     color: black;
@@ -784,7 +709,6 @@ form div {
 }
 
 .btn-primary:hover {
-    /* background-color: #E76F51; */
     color: #CC4949;
     background-color: white;
     border: 3px solid #CC4949;
@@ -824,29 +748,17 @@ form div {
 }
 
 .resume-image {
-    /* background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    z-index: 10; */
     display: flex;
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    /* display: block; */
-    /* overflow: hidden; */
-    /* position: relative; */
     width: auto;
     height: 50%;
-    /* top: -500px; */
 }
 
 .resume-text-background {
     background-color: black;
     height: 100%;
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 600; */
 }
 
 .resume-btn {
@@ -855,7 +767,6 @@ form div {
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    /* background-color: white; */
     padding: 15px 20px;
     background-color: black;
     color: white;
@@ -863,9 +774,6 @@ form div {
     text-transform: uppercase;
     font-size: 0.8em;
     font-weight: bold;
-    /* backdrop-filter: blur(2px); */
-    /* border-radius: 30px; */
-    /* border: 2px solid #E76F51; */
 }
 
 .resume-btn:hover {
@@ -1106,7 +1014,6 @@ footer {
     .headline {
         top: 65%;
         left: 6%;
-        /* transform: translate(-50%); */
     }
 
     .about-me-intro {
@@ -1167,20 +1074,19 @@ footer {
     }
 
     .aboutImg {
+        background-attachment: scroll;
         height: 50vh;
-        background-image: none;
+        width: auto;
+        /* background-image: none; */
     }
 
     .resume-text {
-        font-size: 1.6em;
-        max-width: 320px;
+        font-size: 1.8em;
+        text-align: center;
+        width: 100%;
         margin: 0 auto;
         padding-bottom: 80px;
     }
-
-    /* .form-container {
-        margin-bottom: 40px;
-    } */
 
     .form-container h2 {
         max-width:250px; 
@@ -1197,28 +1103,5 @@ footer {
     footer {
         padding-bottom: 10px;
     }
-/* 
-    .form-container {
-        height: 70vh;
-    }
-
-    form {
-        width: 100%;
-        margin: 0 0 0 0;
-        padding: 0;
-    }
-
-    .form-details {
-        width: 300px;
-        padding-top: 20px;
-    
-    }*/
 
   }
-
-@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
-@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
-@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
-@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
-@media (min-width:1281px) { /* hi-res laptops and desktops */ }
