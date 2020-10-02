@@ -112,6 +112,10 @@ p {
     -ms-transform: translate(-50%, -50%);
 }
 
+hr {
+    margin-bottom: 120px;
+}
+
 .navbar {
     background-color: white;
     width: 100%;
@@ -340,7 +344,7 @@ section {
     text-align: center;
     background-color: white;
     float: left;
-    padding-bottom: 60px;
+    /* padding-bottom: 60px; */
 }
 
 .about-me-intro {
@@ -471,7 +475,7 @@ section {
     grid-template-rows: 1fr 1fr;
     grid-column-gap: 100px;
     grid-row-gap: 30px;
-    padding: 100px 10% 0 10%;
+    padding: 100px 10% 100px 10%;
 }
 
 .project-item {
@@ -541,7 +545,7 @@ section {
 
 .design-summary {
     display: flex;
-    padding: 100px 10% 0 10%;
+    padding: 0 10% 0 10%;
     /* justify-content: center; */
 }
 
@@ -1029,6 +1033,10 @@ footer {
         font-size: 1.6em;
     }
 
+    /* hr {
+        margin-bottom: 0;
+    } */
+
     /* .main {
       background-color: olive;
     } */
@@ -1130,6 +1138,7 @@ footer {
         background-attachment: scroll;
         height: 30vh;
         width: auto;
+        /* margin-top: 150px; */
     }
 
     .design-container {
