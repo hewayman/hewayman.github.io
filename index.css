@@ -964,7 +964,7 @@ footer {
   /* ipad */
 @media screen and (max-width: 992px) {
     .heroParallax {
-        background-image: url(./assets/tableLargeTablet.jpg);
+        background-image: url(./assets/tableMidTablet.jpg);
         background-attachment: scroll;
         /* height: 50vh; */
     }
@@ -1034,7 +1034,7 @@ footer {
     } */
 
     .heroParallax {
-        background-image: url(./assets/tableMobile.jpg);
+        background-image: url(./assets/tableLargeMobile.jpg);
         background-attachment: scroll;
         /* height: 50vh; */
     }
