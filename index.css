@@ -632,6 +632,10 @@ section {
     color: black;
 }
 
+.form-details {
+    padding-top: 40px;
+}
+
 form { 
     max-width:420px; 
     margin:20px auto 80px auto; 
@@ -679,6 +683,7 @@ textarea {
   margin-top:-4px;
   font-weight:700;
 }
+
 [type="submit"]:hover { 
     background:black; 
     color: white;
@@ -799,6 +804,7 @@ textarea {
 footer {
     background-color: black;
     text-align: center;
+    padding-bottom: 10px;
 }
 
 .links {
@@ -947,6 +953,11 @@ footer {
         height: 50vh;
     }
 
+    [type="submit"] {
+        font-size: 1em;
+        padding-top:8px;
+        padding-bottom:8px;
+      }
   }
 
   /* On screens that are 992px or less, set the background color to blue */
@@ -988,6 +999,12 @@ footer {
         /* padding-right: 50px; */
         grid-column-gap: 10px;
     }
+
+    [type="submit"] {
+        font-size: 1em;
+        padding-top:8px;
+        padding-bottom:8px;
+      }
   }
   
   /* On screens that are 600px or less, set the background color to olive */
@@ -1167,8 +1184,10 @@ footer {
         margin:10px auto 50px auto; 
     }
 
-    footer {
-        padding-bottom: 10px;
-    }
+    [type="submit"] {
+        font-size: 1em;
+        padding-top:8px;
+        padding-bottom:8px;
+      }
 
   }
