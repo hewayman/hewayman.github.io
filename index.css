@@ -901,13 +901,43 @@ footer {
         font-size: 2em;
     }
 
+    .heroParallax {
+        background-image: url(./assets/tableMobile.jpg);
+        background-attachment: scroll;
+        /* height: 50vh; */
+    }
+
+    .headline {
+        top: 65%;
+        left: 16%;
+    }
+
     .headerSubtext {
-        font-size: 1em;
+        font-size: 1.4em;
         font-weight: 400;
+        top: 3em;
+    }
+
+    .project-overlay-title {
+        font-family: 'EB Garamond', serif;
+        width: 100%;
+        font-size: 1.3em;
+        line-height: 1;
+        /* font-weight: bold; */
+    }
+    
+    .project-overlay-description {
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.8em;
+        width: 100%;
+        margin-top: 1em;
+        text-align: left;
+        padding-left: 10px;
     }
 
     .project-img {
         background-image: url(./assets/sketchThumbMobile.jpg);
+        background-attachment: scroll;
         height: 30vh;
     }
 
@@ -920,6 +950,7 @@ footer {
 
     .design-img {
         background-image: url(./assets/designImgThumb.jpg);
+        background-attachment: scroll;
         height: 30vh;
     }
     
@@ -927,36 +958,38 @@ footer {
         height: 50vh;
     }
 
-    /* .form-container {
-        height: 40vh;
-    }
-
-    .form-details {
-        width: 700px;
-    }
-
-    form {
-        width: 100%;
-        margin: 0 0 0 0;
-        padding: 0 0 0 45px;
-    } */
-
   }
 
   /* On screens that are 992px or less, set the background color to blue */
   /* ipad */
 @media screen and (max-width: 992px) {
-    /* .main {
-      background-color: blue;
-    } */
+    .heroParallax {
+        background-image: url(./assets/tableMobile.jpg);
+        background-attachment: scroll;
+        /* height: 50vh; */
+    }
 
-    /* .projects-container {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-column-gap:0;
-        grid-row-gap: 30px;
-        padding: 100px 10% 0 10%;
-    } */
+    .headline {
+        top: 65%;
+        left: 16%;
+    }
+    
+    .project-overlay-title {
+        font-family: 'EB Garamond', serif;
+        width: 100%;
+        font-size: 1.3em;
+        line-height: 1;
+        /* font-weight: bold; */
+    }
+    
+    .project-overlay-description {
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.8em;
+        width: 100%;
+        margin-top: 1em;
+        text-align: left;
+        padding-left: 10px;
+    }
 
     .project-skills {
         grid-column-gap: 10px;
@@ -1001,9 +1034,9 @@ footer {
     } */
 
     .heroParallax {
-        background-image: url(./assets/tabletopMobile2.jpg);
+        background-image: url(./assets/tableMobile.jpg);
         background-attachment: scroll;
-        /* height: 80vh; */
+        /* height: 50vh; */
     }
 
     .hero {
@@ -1022,9 +1055,33 @@ footer {
         text-align: left;
     }
 
+    .btn-primary {
+        padding: 12px 18px;
+        font-size: 0.5em;
+    }
+
+    .project-overlay-title {
+        font-family: 'EB Garamond', serif;
+        width: 100%;
+        font-size: 1.3em;
+        line-height: 1;
+        /* font-weight: bold; */
+    }
+    
+    .project-overlay-description {
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.8em;
+        width: 100%;
+        margin-top: 1em;
+        text-align: left;
+        padding-left: 10px;
+    }
+
     .project-img {
-        background-image: none;
-        height: 5vh;
+        background-image: url(./assets/sketchThumb.jpg);
+        background-attachment: scroll;
+        height: 30vh;
+        margin-bottom: 20px;
     }
 
     .project-summary {
@@ -1056,6 +1113,7 @@ footer {
 
     .design-text {
         padding-right: 0;
+        padding-top: 20px;
     }
 
     .design-skills {
@@ -1063,8 +1121,15 @@ footer {
     }
 
     .design-img {
-        background-image: none;
         height: 0;
+        background-image: none;
+    }
+
+    .design-img-mobile {
+        background-image: url(./assets/designTextMobile.jpg);
+        background-attachment: scroll;
+        height: 30vh;
+        width: auto;
     }
 
     .design-container {
@@ -1075,29 +1140,37 @@ footer {
 
     .aboutImg {
         background-attachment: scroll;
-        height: 50vh;
+        height: 30vh;
         width: auto;
         /* background-image: none; */
     }
 
     .resume-text {
+        background-color: rgb(255, 255, 255, 0.3);
         font-size: 1.8em;
         text-align: center;
         width: 100%;
         margin: 0 auto;
-        padding-bottom: 80px;
+        padding-bottom: 60px;
+        padding-top: 100px;
+    }
+
+    .resume-btn {
+        top: 75%;
+        padding: 12px 18px;
+        font-size: 0.5em;
     }
 
     .form-container h2 {
         max-width:250px; 
-        margin: 0 auto 0 auto; 
+        margin: 20px auto 0 auto; 
         color: black;
         /* text-align: center; */
     }
     
     form { 
         max-width:250px; 
-        margin:20px auto 50px auto; 
+        margin:10px auto 50px auto; 
     }
 
     footer {
