@@ -678,6 +678,8 @@ form {
   line-height: 22px;
   background-color: transparent;
   border:2px solid black;
+  border-radius: 0;
+  -webkit-border-radius: 0;
   transition: all 0.3s;
   padding: 13px;
   margin-bottom: 15px;
@@ -700,8 +702,8 @@ textarea {
   /* font-family: 'Montserrat', Arial, Helvetica, sans-serif; */
   width: 100%;
   background: white;
-  /* border-radius:5px; */
-  /* border:0; */
+  border-radius: 0;
+  -webkit-border-radius: 0;
   border: 2px solid #CC4949;
   cursor:pointer;
   color: #CC4949;
@@ -1104,7 +1106,7 @@ footer {
     }
 
     .about-me-intro {
-        width: 85vw;
+        width: 90vw;
         margin: 0 auto;
         text-align: left;
         padding: 20px 10% 0 10%;
