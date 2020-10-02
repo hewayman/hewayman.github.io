@@ -1073,6 +1073,12 @@ footer {
 
     .navbar {
         padding-right: 40px;
+        height: 60px;
+    }
+
+    .logo {
+        height: 60px;
+        width: 60px;
     }
 
     .headerSubtext {
