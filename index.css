@@ -981,7 +981,7 @@ footer {
     }
 
     .main {
-      background-color: pink;
+      /* background-color: pink; */
       padding-top: 0;
     }
 
@@ -1038,9 +1038,9 @@ footer {
   /* On screens that are 992px or less, set the background color to blue */
   /* ipad */
 @media screen and (max-width: 992px) {
-    .main {
+    /* .main {
       background-color: blue;
-    }
+    } */
 
     /* .projects-container {
         grid-template-columns: 1fr;
@@ -1088,9 +1088,9 @@ footer {
         font-size: 1.6em;
     }
 
-    .main {
+    /* .main {
       background-color: olive;
-    }
+    } */
 
     .heroParallax {
         background-image: url(./assets/tabletopMobile2.jpg);
