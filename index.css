@@ -918,9 +918,16 @@ footer {
 }
 
 .links li {
-    color: white;
     display: inline;
     padding: 10px;
+}
+
+.links a {
+    color: white;
+}
+
+.links a:hover {
+    color:#E76F51;
 }
 /* 
 .links i {
@@ -1185,6 +1192,10 @@ footer {
     form { 
         max-width:250px; 
         margin:20px auto 50px auto; 
+    }
+
+    footer {
+        padding-bottom: 10px;
     }
 /* 
     .form-container {
