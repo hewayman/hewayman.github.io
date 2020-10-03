@@ -260,7 +260,7 @@ nav li {
     display: inline-block;
     list-style-type: none;
     font-size: 1rem;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     padding: 20px 0 0 20px;
 }
 
