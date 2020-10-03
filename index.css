@@ -93,6 +93,19 @@ p {
     line-height: 1em;
 }
 
+.project-overlay-title {
+    font-family: 'EB Garamond', serif;
+    font-size: 2.2em;
+    line-height: 1;
+    /* font-weight: bold; */
+}
+
+.project-overlay-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8em;
+    margin-top: 0.25em;
+}
+
 .skillsHeader {
     width: 100%;
 }
@@ -112,6 +125,10 @@ p {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
+
+
+
+/* NAVBAR */
 
 .navbar {
     background-color: white;
@@ -190,8 +207,7 @@ p {
 }
 
 /* 
- * Transform all the slices of hamburger
- * into a crossmark.
+ * Transform all the slices of hamburger into a crossmark.
  */
 #menu-toggle input:checked ~ span
 {
@@ -201,7 +217,7 @@ p {
 }
 
 /*
- * But let's hide the middle one.
+ * Hide the middle one.
  */
 #menu-toggle input:checked ~ span:nth-last-child(3)
 {
@@ -210,7 +226,7 @@ p {
 }
 
 /*
- * Ohyeah and the last one should go the other direction
+ * Change direction of last one
  */
 #menu-toggle input:checked ~ span:nth-last-child(2)
 {
@@ -218,8 +234,7 @@ p {
 }
 
 /*
- * Make this absolute positioned
- * at the top left of the screen
+ * Positioned at the top right of the screen
  */
 #menu
 {
@@ -248,7 +263,7 @@ p {
 }
 
 /*
- * And let's slide it in from the left
+ * Slide it in from the right
  */
 #menu-toggle input:checked ~ ul
 {
@@ -264,20 +279,9 @@ nav li {
     padding: 20px 0 0 20px;
 }
 
-/* nav li a {
-    color: black;
-    transition: all 0.3s ease 0s;
-    opacity: 0.8;
-}
 
-nav li a:hover {
-    color: #E76F51;
-    text-decoration: none;
-} */
 
-/* #logo{
-    font-size: 24px;
-} */
+/* HERO SECTION */
 
 section {
     display: flex;
@@ -316,6 +320,10 @@ section {
     left: 30%;
     /* transform: translate(-50%); */
 }
+
+
+
+/* MAIN CONTENT*/
 
 .main {
     background: #fff;
@@ -475,23 +483,6 @@ section {
     opacity: 1;
     cursor: pointer;
 }
-/* 
-.project-overlay:hover > * {
-    transform: translateY(0);
-} */
-
-.project-overlay-title {
-    font-family: 'EB Garamond', serif;
-    font-size: 2.2em;
-    line-height: 1;
-    /* font-weight: bold; */
-}
-
-.project-overlay-description {
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.8em;
-    margin-top: 0.25em;
-}
 
 .design-img {
     float: left;
@@ -553,20 +544,22 @@ section {
     overflow: hidden;
 }
 
-.resume-image {
-    /* float: left; */
+
+
+/* RESUME SECTION */
+
+/* .resume-image {
     background-image: url(./assets/italy.jpg);
     height: 80vh;
     width: 100%;
-    /* height: 100vh; */
     display: flex;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
-.overlay {
+/* .overlay {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -592,6 +585,27 @@ section {
 
 .overlay:hover > * {
     transform: translateY(0);
+} */
+.resume {
+    position: relative;
+    width: 100%;
+    height: 20%;
+    overflow: hidden;
+    margin: 100px 0 0 0;
+}
+
+.resume-image {
+    display: flex;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 50%;
+}
+
+.resume-text-background {
+    background-color: black;
+    height: 100%;
 }
 
 .overlay_title {
@@ -609,6 +623,9 @@ section {
     margin:70px auto 0 auto; 
     color: black;
 }
+
+
+/* CONTACT FORM */
 
 .form-details {
     padding-top: 40px;
@@ -671,6 +688,9 @@ textarea {
     border: none;
 }
 
+
+/* BUTTONS */
+
 .btn-primary {
     padding: 12px 20px;
     background-color: white;
@@ -700,39 +720,15 @@ textarea {
     outline: none !important;
 }
 
-.modal{
-    height: 100vh; /* respsonsive width */    
+#btn-modal {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
 }
 
-.modal-header {
-    padding: 10px 20px;
-}
-
-.modal-body {
-    /* width: 75%; */
-    margin: 0 auto;
-}
-
-.resume {
-    position: relative;
-    width: 100%;
-    height: 20%;
-    overflow: hidden;
-    margin: 100px 0 0 0;
-}
-
-.resume-image {
-    display: flex;
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: auto;
-    height: 50%;
-}
-
-.resume-text-background {
+#btn-modal:hover {
     background-color: black;
-    height: 100%;
+    color: white; 
 }
 
 .resume-btn {
@@ -771,16 +767,40 @@ textarea {
     outline: none;
 }
 
+
+
+/* PROJECT MODALS */
+
+.modal{
+    height: 100vh; /* respsonsive width */    
+}
+
+.modal-header {
+    padding: 10px 20px;
+}
+
+.modal-body {
+    /* width: 75%; */
+    margin: 0 auto;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+
+
+/* FOOTER */
+
 .footer-container {
     position: relative;
     background-color: white;
     z-index: 10;
 }
-
-/* .contact {
-    background-color: pink;
-    position: relative;
-} */
 
 footer {
     background-color: black;
@@ -814,37 +834,29 @@ footer {
     color:#be5c44;
     transition: color 0.4s ease 0s;
 }
-/* 
-.links i {
-    color: white;
-} */
 
 
-.carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
-}
 
-.carousel-control-next-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-}
+/* MOBILE AND TABLETS */
 
-#btn-modal {
-    background-color: white;
-    border: 2px solid black;
-    color: black;
-    /* padding: 10px 15px; */
-}
-
-#btn-modal:hover {
-    background-color: black;
-    /* border: 2px solid #E76F51; */
-    color: white;
-    
-}
-
-  /* On screens that are 992px or less, set the background color to blue */
+  /* On screens that are 992px or less*/
   /* ipad */
   @media screen and (max-width: 1024px) {
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .headerSubtext {
+        font-size: 1.4em;
+        font-weight: 400;
+        top: 3em;
+    }
+
     #menu {
         width: 250px;
         height: 400px;
@@ -862,14 +874,6 @@ footer {
       padding-top: 0;
     }
 
-    h1 {
-        font-size: 3em;
-    }
-
-    h2 {
-        font-size: 2em;
-    }
-
     .heroParallax {
         background-image: url(./assets/tableLargeTablet.jpg);
         background-attachment: scroll;
@@ -879,12 +883,6 @@ footer {
     .headline {
         top: 65%;
         left: 16%;
-    }
-
-    .headerSubtext {
-        font-size: 1.4em;
-        font-weight: 400;
-        top: 3em;
     }
 
     .about-me-intro {
@@ -957,7 +955,7 @@ footer {
       }
   }
 
-  /* On screens that are 992px or less, set the background color to blue */
+  /* On screens that are 992px or less */
   /* ipad */
 @media screen and (max-width: 992px) {
     .heroParallax {
@@ -1020,11 +1018,6 @@ footer {
         padding-top: 50px;
     }
 
-    /* .design-skills {
-  
-        grid-column-gap: 10px;
-    } */
-
     .design-summary {
         display: inline-block;
         height: fit-content;
@@ -1058,7 +1051,7 @@ footer {
       }
   }
   
-  /* On screens that are 600px or less, set the background color to olive */
+  /* On screens that are 600px or less */
 @media screen and (max-width: 600px) {
     body {
         width:99vw;
@@ -1091,10 +1084,6 @@ footer {
     .form-container h2 {
         font-size: 1.6em;
     }
-
-    /* .main {
-      background-color: olive;
-    } */
 
     .heroParallax {
         background-image: url(./assets/tableLargeMobile.jpg);
@@ -1202,14 +1191,6 @@ footer {
         background-image: none;
     }
 
-    /* .design-img-mobile {
-        background-image: url(./assets/designTextMobile.jpg);
-        background-attachment: scroll;
-        height: 30vh;
-        width: auto;
-        margin-top: 150px;
-    } */
-
     .design-container {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -1220,7 +1201,6 @@ footer {
         background-attachment: scroll;
         height: 30vh;
         width: auto;
-        /* background-image: none; */
     }
 
     .resume-text {
@@ -1243,7 +1223,6 @@ footer {
         max-width:250px; 
         margin: 20px auto 0 auto; 
         color: black;
-        /* text-align: center; */
     }
 
     .form-details {
