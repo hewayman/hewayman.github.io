@@ -790,10 +790,10 @@ footer {
 
 .links {
     /* background-color: black; */
-    height: 40px;
+    height: 30px;
     width: 100%;
     display: inline-block;
-    padding-top: 15px;
+    padding-top: 20px;
 }
 
 .links ul {
@@ -803,7 +803,7 @@ footer {
 
 .links li {
     display: inline;
-    padding: 10px;
+    padding: 25px;
 }
 
 .links a {
@@ -811,7 +811,8 @@ footer {
 }
 
 .links a:hover {
-    color:#E76F51;
+    color:#be5c44;
+    transition: color 0.4s ease 0s;
 }
 /* 
 .links i {
